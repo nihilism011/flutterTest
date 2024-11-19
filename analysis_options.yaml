@@ -1,0 +1,32 @@
+# 이 파일은 Dart 코드를 정적으로 분석하여
+# 오류, 경고 및 린트를 확인하는 분석기를 구성합니다.
+#
+# 분석기에서 식별된 문제는 Dart가 지원되는 IDE의
+# 사용자 인터페이스에 표시됩니다 (https://dart.dev/tools#ides-and-editors).
+# 분석기는 또한 `flutter analyze` 명령어를 실행하여
+# 커맨드 라인에서도 호출할 수 있습니다.
+#
+# 다음 라인은 Flutter 앱, 패키지 및 플러그인에 대한
+# 권장 린트 세트를 활성화하여 좋은 코딩 관행을 장려합니다.
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  # 이 프로젝트에 적용된 린트 규칙은 아래 섹션에서
+  # `package:flutter_lints/flutter.yaml`에 포함된 규칙을 비활성화하거나
+  # 추가 규칙을 활성화하여 사용자 정의할 수 있습니다.
+  # 모든 사용 가능한 린트와 그 문서는 https://dart.dev/lints 에서 확인할 수 있습니다.
+  #
+  # 아래 섹션에서 프로젝트 전체에 대해 린트 규칙을 비활성화하는 대신,
+  # 특정 코드 줄이나 Dart 파일에 대해 `// ignore: name_of_lint`와
+  # `// ignore_for_file: name_of_lint` 구문을 사용하여 린트를 억제할 수도 있습니다.
+  rules:
+    prefer_typing_uninitialized_variables: false
+    prefer_const_constructors_in_immutables: false
+    prefer_const_constructors: false
+    avoid_print: false
+    prefer_const_literals_to_create_immutables: false
+    # avoid_print: false  # `avoid_print` 규칙을 비활성화하려면 주석을 해제하세요
+    # prefer_single_quotes: true  # `prefer_single_quotes` 규칙을 활성화하려면 주석을 해제하세요
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options
