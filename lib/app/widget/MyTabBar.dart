@@ -1,4 +1,5 @@
 
+import 'package:first_flutter_test_space/app/widget/page_move.dart';
 import 'package:flutter/material.dart';
 
 class MyTabBar extends StatefulWidget {
@@ -36,6 +37,7 @@ class _MyTabBarState extends State<MyTabBar> {
         bottom: TabBar(tabs: widget.tabNameList),
       ),
       body: TabBarView(children: widget.tabPageList)
+        ,bottomNavigationBar: BottomAppBar(child: PageMove()),
     );
   }
 

@@ -1,6 +1,9 @@
 import 'package:first_flutter_test_space/app/widget/CheckImageBoxBtn.dart';
+import 'package:first_flutter_test_space/app/widget/HttpTest.dart';
 import 'package:first_flutter_test_space/app/widget/MyTabBar.dart';
 import 'package:first_flutter_test_space/app/widget/RadioBtn.dart';
+import 'package:first_flutter_test_space/app/widget/number_game.dart';
+import 'package:first_flutter_test_space/app/widget/page_move.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -9,11 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-        length: 3,
+        length: 5,
         child: MaterialApp(
             home: MyTabBar(
-          title: "testSuc",
-          tabNameList: [Text("tab1"), Text("tab2"), Text("tab3")],
+          title: "여기가 헤더임 ㄹㅇ",
+          tabNameList: [Text("라디오"), Text("체크"), Text("통신"),Text("숫자게임"),Text("페이지이동")],
           tabPageList: [
             Center(child: RadioBtn()),
             Center(
@@ -23,7 +26,9 @@ class MyApp extends StatelessWidget {
                 CheckImageBoxBtn(label: "레이기에나", img: "rai.png")
               ],
             )),
-            Center(child: Text("data3"))
+            Center(child: HttpTest()),
+            Center(child: NumberGame(),),
+            Center(child: PageMove(),)
           ],
         )));
   }
