@@ -28,10 +28,11 @@ dependencies:
     sdk: flutter
   http:
   flutter_rating_bar:
-
-  # 아래 줄은 애플리케이션에 Cupertino Icons 글꼴을 추가합니다.
-  # iOS 스타일 아이콘을 사용하려면 CupertinoIcons 클래스를 사용하세요.
+  qr_flutter: ^4.1.0
   cupertino_icons: ^1.0.8
+  country_code_picker: ^3.1.0
+  fluttertoast: ^8.2.8
+  shared_preferences: ^2.3.3
 
 dev_dependencies:
   flutter_test:
